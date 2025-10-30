@@ -1,3 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("Website loaded successfully!");
+$(document).ready(function() {
+  $("nav a").on("click", function() {
+    $("nav a").removeClass("active");
+    $(this).addClass("active");
+  });
 });

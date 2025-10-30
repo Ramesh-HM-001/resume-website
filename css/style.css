@@ -1,66 +1,59 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
 
 header {
-  background-color: #1e40af;
+  background: #222;
   color: white;
+  padding: 15px;
   text-align: center;
-  padding: 20px;
 }
 
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: 500;
 }
 
-nav a:hover {
+nav a.active, nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  background: white;
-  width: 80%;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.profile-pic {
-  display: block;
-  margin: 0 auto 15px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 3px solid #1e40af;
-}
-
-h2 {
-  color: #1e40af;
-  border-bottom: 2px solid #1e40af;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-footer {
-  background-color: #1e40af;
-  color: white;
+.intro {
   text-align: center;
-  padding: 10px;
+  padding: 50px;
 }
-.profile-pic {
-  display: block;
-  margin: 20px auto;
+
+.intro img {
   width: 150px;
-  height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1e40af;
+  border: 3px solid #ddd;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #0078d7;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.bio table {
+  margin: 40px auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.bio table, .bio td {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
